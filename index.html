@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>موقع التعليم الابتدائي</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--accent:#0ea5a6;--dark:#0f172a;--muted:#6b7280;--bg:#f8fafc}
+    *{box-sizing:border-box}html,body{height:100%;margin:0;font-family:'Cairo',sans-serif;background:var(--bg);color:var(--dark)}a{color:inherit;text-decoration:none}
+    header{background:#fff;border-bottom:1px solid #e6e9ef;position:sticky;top:0;z-index:50}
+    .container{max-width:1100px;margin:0 auto;padding:20px}
+    nav{display:flex;align-items:center;justify-content:space-between}
+    .logo{font-weight:700;color:var(--accent);font-size:20px}
+    .nav-links{display:flex;gap:18px}
+    .btn{background:var(--accent);color:#fff;padding:10px 16px;border-radius:8px;font-weight:600}
+    .hero{display:flex;gap:30px;align-items:center;padding:40px 20px}
+    .hero-left{flex:1}
+    .hero h1{font-size:30px;margin:0 0 8px}
+    .hero p{color:var(--muted);line-height:1.6}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:18px}
+    .card{background:#fff;padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(15,23,42,0.06)}
+    .two-col{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:24px 0}
+    form{display:grid;gap:10px}input,textarea{padding:10px;border:1px solid #e2e8f0;border-radius:8px;font-size:14px}textarea{min-height:120px}
+    footer{padding:26px 0;color:var(--muted);text-align:center}
+    .grade-list{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .subject-list{padding-inline-start:18px;color:var(--muted);margin:8px 0 0}
+    .toc{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+    .toc a{background:#fff;padding:8px 10px;border-radius:8px;border:1px solid #eef2f6}
+    @media (max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}.two-col{grid-template-columns:1fr}.hero{flex-direction:column;text-align:center}}
+    @media (max-width:560px){.grid{grid-template-columns:1fr}nav{padding:10px}.hero h1{font-size:22px}.grade-list{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">موقع التعليم الابتدائي</div>
+        <div class="nav-links">
+          <a href="#curriculum">المقررات</a>
+          <a href="#about">عن الموقع</a>
+          <a href="#contact" class="btn">تواصل معنا</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-left">
+        <h1>كل دروس التعليم الابتدائي — من الأولى إلى السادسة</h1>
+        <p>هذا الموقع يجمع دروس ومقررات التعليم الابتدائي بجميع سنواته وموادها بطريقة منظمة وسهلة التصفح. يمكنك النقر على أي سنة لرؤية جميع المواد والدروس المرتبطة بها.</p>
+        <div class="toc">
+          <a href="#grade1">السنة الأولى ابتدائي</a>
+          <a href="#grade2">السنة الثانية ابتدائي</a>
+          <a href="#grade3">السنة الثالثة ابتدائي</a>
+          <a href="#grade4">السنة الرابعة ابتدائي</a>
+          <a href="#grade5">السنة الخامسة ابتدائي</a>
+          <a href="#grade6">السنة السادسة ابتدائي</a>
+        </div>
+      </div>
+      <div class="hero-right" style="flex:1">
+        <div class="card">
+          <img src="https://via.placeholder.com/600x380.png?text=مقررات+التعليم+الابتدائي" alt="معرض" style="width:100%;border-radius:8px;display:block">
+        </div>
+      </div>
+    </section>
+
+    <section id="curriculum" class="container">
+      <h2>مقررات السنوات</h2>
+      <p style="color:var(--muted)">انقر على أي سنة لعرض المواد والدروس. لاحقًا يمكننا ربط كل مادة بصفحات دروس منفصلة أو ملفات PDF أو تمارين قابلة للتحميل.</p>
+      <div class="grade-list" style="margin-top:12px">
+        <!-- هنا يتم إضافة تفاصيل كل سنة -->
+      </div>
+    </section>
+
+    <section id="about" class="container">
+      <div class="two-col">
+        <div class="card">
+          <h2>عن الموقع</h2>
+          <p style="color:var(--muted)">موقع تعليمي يهدف إلى جمع دروس التعليم الابتدائي بطريقة منظمة وسهلة.</p>
+        </div>
+        <div class="card">
+          <h2>كيف سننظم المحتوى؟</h2>
+          <ul style="color:var(--muted);margin:8px 0 0;padding-inline-start:18px">
+            <li>صفحات منفصلة لكل سنة.</li>
+            <li>قوائم مواد قابلة للعرض والتحميل.</li>
+            <li>إمكانية إضافة معلمين لتحميل دروسهم وملفات.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="container">
+      <h2>تواصل معنا</h2>
+      <div class="card" style="margin-top:12px">
+        <form onsubmit="event.preventDefault();alert('تم إرسال الرسالة (تجريبي)');">
+          <input type="text" placeholder="الاسم" required />
+          <input type="email" placeholder="البريد الإلكتروني" required />
+          <input type="text" placeholder="الموضوع" />
+          <textarea placeholder="نص الرسالة"></textarea>
+          <div style="display:flex;gap:10px;justify-content:flex-start;margin-top:6px">
+            <button class="btn" type="submit">أرسل</button>
+            <button type="reset" style="padding:10px 14px;border-radius:8px;border:1px solid #e2e8f0;background:#fff">إفراغ</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div>© 2025 موقع التعليم الابتدائي — جميع الحقوق محفوظة</div>
+      <div style="margin-top:6px;color:var(--muted)">الهاتف: 21983181 • البريد: Houssemgwadria04@gmail.com</div>
+    </div>
+  </footer>
+
+</body>
+</html>
